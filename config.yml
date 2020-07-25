@@ -1,0 +1,16 @@
+title: The hacking tools
+description: ghll.3cc624fc-1f67-499f-88ec-f0063a8dd452
+template:
+  repo: the-hacking-tools-template
+  name: the-hacking-tools
+before:
+  - type: createIssue
+    title: Welcome!
+    body: new-issue.md
+steps:
+  - title: First step
+    description: The first step in your course
+    event: issues.assigned
+    link: '{{ repoUrl }}'
+    actions:
+      - type: closeIssue
